@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>Text summarisation app</h1>
+            <form method = "POST", action="/homepage">
+
+                <label for="content">Text to summarise</label>
+                <br>
+                    <textarea name ="content" placeholder="Please type here" rows="15", cols="60">
+                        {{request.form['content']}}
+                    </textarea>
+                </br>
+                <button type="submit">Summarize</button>
+            </form>
+    </body>
+</html>

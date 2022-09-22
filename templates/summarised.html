@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>Text summarisation app</h1>
+            {% for item in message %}
+                <h2>{{item.title}}</h2>
+                <h3>{{item.text}}</h3>
+            {% endfor %}
+        <a href="homepage">Go back to text input page</a>
+    </body>
+</html>
